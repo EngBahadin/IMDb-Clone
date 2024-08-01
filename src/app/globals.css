@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+    @apply underline underline-offset-8 ;
+    @apply   decoration-amber-500;
+    @apply rounded-3xl decoration-4
+}
