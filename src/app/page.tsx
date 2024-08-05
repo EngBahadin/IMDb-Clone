@@ -1,7 +1,4 @@
-import Navbar from "@/components/Navbar";
 import Results from "@/components/Results";
-import SearchBox from "@/components/SearchBox";
-import { useState } from "react";
 
 const API_KEY = process.env.API_KEY;
 type searchParams = {
@@ -29,12 +26,12 @@ async function Home({ searchParams }: searchParams) {
 
   return (
     <>
-   
       <div>
         <Results results={results} />
-      <h1>ff</h1>
+        <div className="flex justify-center mb-4">
+          <button className="mx-auto  text-amber-600 w-fit u">Next page</button>
+        </div>
       </div>
-
     </>
   );
 }
